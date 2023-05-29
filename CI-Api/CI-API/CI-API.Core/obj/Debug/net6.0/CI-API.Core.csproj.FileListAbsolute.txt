@@ -1,0 +1,17 @@
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\bin\Debug\net6.0\CI-API.Core.deps.json
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\bin\Debug\net6.0\CI-API.Core.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\bin\Debug\net6.0\ref\CI-API.Core.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\bin\Debug\net6.0\CI-API.Core.pdb
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\obj\Debug\net6.0\CI-API.Core.csproj.AssemblyReference.cache
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\obj\Debug\net6.0\CI-API.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\obj\Debug\net6.0\CI-API.Core.AssemblyInfoInputs.cache
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\obj\Debug\net6.0\CI-API.Core.AssemblyInfo.cs
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\obj\Debug\net6.0\CI-API.Core.csproj.CoreCompileInputs.cache
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\obj\Debug\net6.0\CI-API.Core.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\obj\Debug\net6.0\ref\CI-API.Core.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\obj\Debug\net6.0\CI-API.Core.pdb
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\bin\Debug\net6.0\CI-API.Core.runtimeconfig.json
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\obj\Debug\net6.0\CI-API.Core.genruntimeconfig.cache
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\bin\Debug\net6.0\CI-API.Models.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\bin\Debug\net6.0\CI-API.Models.pdb
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Core\obj\Debug\net6.0\CI-API.Core.csproj.CopyComplete
