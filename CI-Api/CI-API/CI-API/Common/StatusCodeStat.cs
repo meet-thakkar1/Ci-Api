@@ -15,8 +15,9 @@
         public static int notFound = 404;
 
         public static string badRequestMessage = "Bad Request";
-        public static int notFounbadRequest = 400;
+        public static int badRequest = 400;
 
-        
+        public static string userExistsMessage = "User Already Registered";
+        public static int userExists = 0;
     }
 }

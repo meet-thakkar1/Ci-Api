@@ -29,16 +29,22 @@ namespace CI_API.Application.services.services
 
         public int RegisterUser(RegisterVm register)
         {
+            bool isRegister = IsEmailRegistered(register.Email);
+            if (isRegister)
+            {
+                return -1; //User Already Exists
+            }
             User user = new User()
             {
                 FirstName = register.FirstName,
                 LastName = register.LastName,
-                PhoneNumber = int.Parse(register.PhoneNumber),
+                PhoneNumber = (int)register.PhoneNumber,
                 Password=register.Password,
                 Email = register.Email,
             };
             
             _db.UserRepo.Add(user);
+            _db.Save();
             if(user != null)
             {
                 return 1;
@@ -70,5 +76,10 @@ namespace CI_API.Application.services.services
 
         }
 
+        public bool IsEmailRegistered(string email)
+        {
+           bool b= _db.UserRepo.IsEmailRegistered(email);
+           return b;
+        }
     }
 }

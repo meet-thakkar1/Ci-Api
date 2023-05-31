@@ -10,8 +10,8 @@ namespace CI_API.Core.Repository
 {
     public class UnitofWork:IUnitofWork
     {
-        private CiplatformContext _db;
-        public UnitofWork(CiplatformContext db)
+        private CiApiContext _db;
+        public UnitofWork(CiApiContext db)
         {
             _db = db;
             UserRepo = new UserRepo(_db);

@@ -11,5 +11,6 @@ namespace CI_API.Core.Interface
     public interface IUserRepo:IGenericRepository<User>
     {
         public User ValidateUser(LoginVM login);
+        public bool IsEmailRegistered(string email);
     }
 }

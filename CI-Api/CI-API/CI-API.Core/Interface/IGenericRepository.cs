@@ -11,6 +11,6 @@ namespace CI_API.Core.Interface
         
         public List<T> GetAll();
 
-        public T Add(T entity);
+        public void Add(T entity);
     }
 }

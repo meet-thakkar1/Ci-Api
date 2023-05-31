@@ -11,9 +11,9 @@ namespace CI_API.Core.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly CiplatformContext _db;
+        private readonly CiApiContext _db;
         private DbSet<T> dbSet;
-        public GenericRepository(CiplatformContext db)
+        public GenericRepository(CiApiContext db)
         {
             _db=db;
             this.dbSet = _db.Set<T>();
@@ -23,10 +23,10 @@ namespace CI_API.Core.Repository
             return dbSet.ToList();
         }
 
-        public T Add(T entity)
+        public void Add(T entity)
         {
             dbSet.Add(entity);
-            return entity;
+            
         }
     }
 }

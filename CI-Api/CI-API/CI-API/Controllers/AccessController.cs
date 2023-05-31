@@ -51,15 +51,23 @@ namespace CI_API.Controllers
         }
 
         [HttpPost("Register")]
-        public IActionResult Register(RegisterVm register)
+        public async Task<IActionResult> Register(RegisterVm register)
         {
             if (ModelState.IsValid)
             {
-
-                return Ok();
+                int status=_db.AuthorizeService.RegisterUser(register);
+                if (status == -1)
+                {
+                    return Ok(new JsonResult(new ApiResponse<bool> { result = false,data = false,message=StatusCodeStat.userExistsMessage,statusCode=userExists}));
+                }
+                else
+                {
+                    return Ok(new JsonResult(new ApiResponse<bool> { result = true, data = true, message = StatusCodeStat.successMessage, statusCode = success }));
+                }
+                
             }
-            return BadRequest();
-            
+             return  BadRequest(new JsonResult(new ApiResponse<bool> { result = false, data = false, message = StatusCodeStat.badRequestMessage, statusCode = badRequest }));
+
         }
     }
 }

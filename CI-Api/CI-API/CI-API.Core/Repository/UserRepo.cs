@@ -13,18 +13,23 @@ namespace CI_API.Core.Repository
 {
     public class UserRepo: GenericRepository<User> ,IUserRepo
     {
-        private readonly CiplatformContext _db;
-        public UserRepo(CiplatformContext db) :base(db)
+        private readonly CiApiContext _db;
+        public UserRepo(CiApiContext db) :base(db)
         {
             _db= db;    
         }
 
-        public User ValidateUser(LoginVM login)
+        public  User ValidateUser(LoginVM login)
         {
-            User u=_db.Users.Where(x=>x.Email==login.Email && x.Password==login.Password).FirstOrDefault();
+            User u=  _db.Users.Where(x=>x.Email==login.Email && x.Password==login.Password).FirstOrDefault();
             return u;
         }
 
-        
+        public bool IsEmailRegistered(string email)
+        {
+            User u=_db.Users.Where(user=>user.Email==email).FirstOrDefault();
+            if (u != null) { return true; }
+            return false;
+        }
     }
 }

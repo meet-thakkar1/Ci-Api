@@ -22,7 +22,7 @@ builder.Services.AddCors(option =>
         builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
     });
 });
-builder.Services.AddDbContext<CiplatformContext>();
+builder.Services.AddDbContext<CiApiContext>();
 builder.Services.AddScoped<IUnitofWork,UnitofWork>();
 builder.Services.AddScoped<IServiceWrapper,ServiceWrapper>();
 builder.Services.AddAuthentication(x =>
