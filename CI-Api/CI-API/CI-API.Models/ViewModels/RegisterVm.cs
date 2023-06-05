@@ -9,17 +9,17 @@ namespace CI_API.Models.ViewModels
 {
     public class RegisterVm
     {
-        
+        [Required]
         public string FirstName { get; set; }
-       
+        [Required]
         public string LastName { get; set; }
-       
+        [Required]
         public string Email { get; set; }
-       
-        public long PhoneNumber { get; set; }
-       
+        [Required]
+        public long Phone { get; set; }
+        [Required]
         public string Password { get; set; }
-       
+        [Required]
         public string ConfirmPassword { get; set; }
     }
 }

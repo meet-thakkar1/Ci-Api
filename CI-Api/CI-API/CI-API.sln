@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CI-API", "CI-API\CI-API.csproj", "{6D17B275-4DA1-4616-9FBE-35903835C0DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CI-API", "CI-API\CI-API.csproj", "{6D17B275-4DA1-4616-9FBE-35903835C0DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CI-API.Application", "CI-API.Application\CI-API.Application.csproj", "{25D7C20B-45C2-4D06-B65B-CD71F90FCBE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CI-API.Application", "CI-API.Application\CI-API.Application.csproj", "{25D7C20B-45C2-4D06-B65B-CD71F90FCBE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CI-API.Core", "CI-API.Core\CI-API.Core.csproj", "{E312DA4B-82D4-4223-967D-C55773158364}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CI-API.Core", "CI-API.Core\CI-API.Core.csproj", "{E312DA4B-82D4-4223-967D-C55773158364}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CI-API.Models", "CI-API.Models\CI-API.Models.csproj", "{D4FAECE3-7C98-455E-8289-CCD3C80CFE39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CI-API.Models", "CI-API.Models\CI-API.Models.csproj", "{D4FAECE3-7C98-455E-8289-CCD3C80CFE39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CI-API.Common", "CI-API.Common\CI-API.Common.csproj", "{EF941AC8-AA21-4FA5-B8A5-077510C7912A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D4FAECE3-7C98-455E-8289-CCD3C80CFE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4FAECE3-7C98-455E-8289-CCD3C80CFE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4FAECE3-7C98-455E-8289-CCD3C80CFE39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF941AC8-AA21-4FA5-B8A5-077510C7912A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF941AC8-AA21-4FA5-B8A5-077510C7912A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF941AC8-AA21-4FA5-B8A5-077510C7912A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF941AC8-AA21-4FA5-B8A5-077510C7912A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

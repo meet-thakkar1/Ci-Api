@@ -17,3 +17,5 @@ D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Application\bin\Debug\net6.0\CI-API.A
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Application\obj\Debug\net6.0\CI-API.Application.genruntimeconfig.cache
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Application\bin\Debug\net6.0\CI-API.Models.dll
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Application\bin\Debug\net6.0\CI-API.Models.pdb
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Application\bin\Debug\net6.0\CI-API.Common.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API.Application\bin\Debug\net6.0\CI-API.Common.pdb

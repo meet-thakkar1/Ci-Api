@@ -10,15 +10,29 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using CI_API.Common;
+using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CI_API.Application.services.services
 {
     public class AuthorizeService: GenericServices<User>,IAuthorizeService
     {
         private readonly IUnitofWork _db;
-        public AuthorizeService(IUnitofWork db) :base(db)
+        private readonly IConfiguration _config;
+        public AuthorizeService(IUnitofWork db, IConfiguration config) :base(db)
         {
             _db = db;
+            _config = config;
+        }
+
+        public IEnumerable<User> Test()
+        {
+
+            CommonMethods m=new CommonMethods(_config);
+            IEnumerable<User> u=_db.UserRepo.TestRepo();
+            return u;
+            
         }
 
         public User ValidateLoginUser(LoginVM login)
@@ -38,7 +52,7 @@ namespace CI_API.Application.services.services
             {
                 FirstName = register.FirstName,
                 LastName = register.LastName,
-                PhoneNumber = (int)register.PhoneNumber,
+                PhoneNumber = (int)register.Phone,
                 Password=register.Password,
                 Email = register.Email,
             };
@@ -62,7 +76,7 @@ namespace CI_API.Application.services.services
                 new Claim(ClaimTypes.Name,$"{user.FirstName} {user.LastName}"),
                 new Claim(ClaimTypes.Role,role),
                 new Claim(ClaimTypes.Sid,user.UserId.ToString()),
-                new Claim("Avatar",user.Avatar)
+               
             });
             var credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);
             var tokenDescriptor = new SecurityTokenDescriptor
@@ -80,6 +94,17 @@ namespace CI_API.Application.services.services
         {
            bool b= _db.UserRepo.IsEmailRegistered(email);
            return b;
+        }
+
+        public IActionResult ForgotPassword(string email)
+        {
+            JsonResult j=(JsonResult)_db.UserRepo.ForgotPassword(email);
+            return j;
+        }
+
+        public IActionResult ResetPassword(ResetPassword reset)
+        {
+            return _db.UserRepo.ResetPassword(reset);
         }
     }
 }

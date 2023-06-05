@@ -15,7 +15,6 @@ D:\CiPlatform Angular\CI-Api\CI-API\CI-API\obj\Debug\net6.0\CI-API.GeneratedMSBu
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API\obj\Debug\net6.0\CI-API.AssemblyInfoInputs.cache
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API\obj\Debug\net6.0\CI-API.AssemblyInfo.cs
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API\obj\Debug\net6.0\CI-API.csproj.CoreCompileInputs.cache
-D:\CiPlatform Angular\CI-Api\CI-API\CI-API\obj\Debug\net6.0\CI-API.MvcApplicationPartsAssemblyInfo.cs
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API\obj\Debug\net6.0\CI-API.MvcApplicationPartsAssemblyInfo.cache
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API\obj\Debug\net6.0\staticwebassets.build.json
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API\obj\Debug\net6.0\staticwebassets.development.json
@@ -68,3 +67,17 @@ D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\CI-API.Application.p
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\CI-API.Core.pdb
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\CI-API.Models.dll
 D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\CI-API.Models.pdb
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\CI-API.Common.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\CI-API.Common.pdb
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\obj\Debug\net6.0\CI-API.MvcApplicationPartsAssemblyInfo.cs
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\Dapper.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\MailKit.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\MimeKit.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\NETCore.MailKit.dll
+D:\CiPlatform Angular\CI-Api\CI-API\CI-API\bin\Debug\net6.0\BouncyCastle.Crypto.dll

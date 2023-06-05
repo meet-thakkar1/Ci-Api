@@ -1,5 +1,6 @@
 using CI_API.Application.services.Interface;
 using CI_API.Application.services.services;
+using CI_API.Common;
 using CI_API.Models.Data;
 using CI_API.Core.Interface;
 using CI_API.Core.Repository;
@@ -25,6 +26,7 @@ builder.Services.AddCors(option =>
 builder.Services.AddDbContext<CiApiContext>();
 builder.Services.AddScoped<IUnitofWork,UnitofWork>();
 builder.Services.AddScoped<IServiceWrapper,ServiceWrapper>();
+
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
